@@ -1,0 +1,371 @@
+
+.about-wrapper{
+    position: relative;
+    width: 100%;
+    height: 650px;
+    /*border: 5px solid red;*/
+}
+
+.about-name{
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    /*border: 2px solid green;*/
+
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+}
+.about-name>h1{
+    position: relative;
+    flex: 1;
+    /*border: 1px solid black;*/
+    width:100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    color:#333;
+}
+.about-name>h1:nth-child(1){
+    top: 15px;
+
+
+}
+.about-name>h1::after{
+    content: '';
+    position: absolute;
+    width: 83px;
+    height: 5px;
+    top: 45px;
+    left: 109px;
+    border-radius: 5px;
+    background-color:#FE500A;
+}
+.about-wrapper-outer{
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    /*border: 2px solid green;*/
+
+    top: 80px;
+    left: 150px;
+    display: flex;
+}
+.about-inner{
+
+    flex: 1;
+    /*border: 2px solid black;*/
+    position: relative;
+}
+.about-inner>img{
+    /*border: 1px solid red;*/
+    /*transform: rotate(30deg);*/
+    width: 380px;
+    height: 450px;
+    position: absolute;
+    left: 100px;
+    right: 0;
+    bottom: 0;
+    top: 35px;
+    margin: auto;
+    -webkit-box-shadow: 2px 2px 5px 9px rgba(0,0,0,0.14);
+    box-shadow: 2px 2px 5px 9px rgba(0,0,0,0.14);
+    border-radius: 6px;
+
+
+}
+.name{
+    position: relative;
+    /*border: 1px solid red;*/
+    top:19px;
+    left: 10px;
+    font-weight: bold;
+
+
+}
+.from{
+    position: relative;
+    /*border: 1px solid red;*/
+    top:9px;
+    left: 10px;
+    font-weight: bold;
+    color: black;
+
+}
+.se{
+    position: relative;
+    /*border: 1px solid red;*/
+    left: 10px;
+    top:9px;
+    font-weight: bold;
+}
+.year{
+    position: relative;
+    /*border: 1px solid red;*/
+    left: 10px;
+    top:9px;
+    font-weight: bold;
+}
+
+.desMe1 .desMe2{
+    letter-spacing: 4px;
+}
+
+.hi{
+    top: 15px;
+}
+.about-inner-out{
+    position:absolute;
+    /*border: 1px solid purple;*/
+    width: 550px;
+    height: 450px;
+    top: 16px;
+    /*left: 40px;*/
+    -webkit-box-shadow: 2px 2px 5px 9px rgba(0,0,0,0.14);
+    box-shadow: 2px 2px 5px 9px rgba(0,0,0,0.14);
+    /*border-radius: 6px;*/
+
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+
+    transition-property: all;
+    transition-duration: 2s;
+
+
+}
+.about-inner-out:hover{
+    background-color:#0064DE;
+    color: white;
+    transition-property: all;
+
+}
+
+@media all and (max-width: 376px) {
+    .about-wrapper{
+        /*border: 2px solid black;*/
+    }
+    .about-name>h1{
+        font-size: 33px;
+    }
+    .about-wrapper-outer{
+        /*border: 2px solid green;*/
+        left: 37px;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+    .about-inner{
+        /*border: 2px solid black;*/
+    }
+    .about-inner>img{
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 21px;
+    }
+
+    .about-inner-out {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 50px;
+    }
+    .name {
+        top: 9px;
+        padding-left: 13px;
+        font-size: 11px;
+        font-weight: bold;
+        width: 100%;
+        left: 0;
+    }
+    .from {
+        position: relative;
+        top: 4px;
+        padding-left: 13px;
+        font-weight: bold;
+        color: black;
+        font-size: 9px;
+        width: 100%;
+        left: 0;
+    }
+
+    .se {
+        padding-left: 13px;
+        top: -10px;
+        font-weight: bold;
+        font-size: 11px;
+        width: 100%;
+        left: 0;
+    }
+    .year {
+
+        top: -15px;
+        padding-left: 13px;
+        width: 100%;
+        font-size: 9px;
+        font-weight: bold;
+        left: 0;
+
+    }
+    .hi{
+        top: -22px;
+    }
+    .desMe1{
+        top:-27px;
+        font-size: 8px;
+    }
+    .desMe2{
+        top:-26px;
+        font-size: 8px;
+    }
+}
+
+@media all and (min-width: 376px) and (max-width: 426px) {
+    .about-wrapper{
+        /*border: 2px solid black;*/
+    }
+    .about-name>h1{
+        font-size: 33px;
+    }
+    .about-wrapper-outer{
+        /*border: 2px solid green;*/
+        left: 37px;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+    .about-inner{
+        /*border: 2px solid black;*/
+    }
+    .about-inner>img{
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 21px;
+    }
+
+    .about-inner-out {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 50px;
+    }
+    .name {
+        top: 9px;
+        padding-left: 13px;
+        font-size: 11px;
+        font-weight: bold;
+        width: 100%;
+        left: 0;
+    }
+    .from {
+        position: relative;
+        top: 4px;
+        padding-left: 13px;
+        font-weight: bold;
+        color: black;
+        font-size: 9px;
+        width: 100%;
+        left: 0;
+    }
+
+    .se {
+        padding-left: 13px;
+        top: -10px;
+        font-weight: bold;
+        font-size: 11px;
+        width: 100%;
+        left: 0;
+    }
+    .year {
+
+        top: -15px;
+        padding-left: 13px;
+        width: 100%;
+        font-size: 9px;
+        font-weight: bold;
+        left: 0;
+
+    }
+    .hi{
+        top: -22px;
+    }
+    .desMe1{
+        top:-27px;
+        font-size: 8px;
+    }
+    .desMe2{
+        top:-26px;
+        font-size: 8px;
+    }
+
+}
+
+@media all and (min-width: 426px) and (max-width: 769px) {
+
+    .about-wrapper-outer {
+        position: absolute;
+        width: 89%;
+        height: 66%;
+        /*border: 2px solid green;*/
+        top: 96px;
+        left: 51px;
+        display: flex;
+        overflow-x: hidden;
+    }
+    .about-inner {
+        flex: 1;
+        /*border: 2px solid black;*/
+        position: relative;
+        margin-left: 5px;
+    }
+    .about-inner>img {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top:0;
+    }
+    .about-inner-out{
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@media all and (min-width: 769px) and (max-width: 1024px) {
+    .about-wrapper-outer {
+        /*border: 1px solid red;*/
+        left: 94px;
+        width: 75%;
+        top: 100px;
+    }
+
+    .about-name {
+        height: 76px;
+    }
+
+    .about-inner {
+        margin-left: 16px;
+    }
+
+    .about-inner > img {
+        /*border: 5px solid green;*/
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    .about-inner-out {
+        width: 100%;
+        height: 100%;
+        top: 0;
+    }
+}

@@ -1,0 +1,118 @@
+/**@author : Hasitha Lakshan
+Project :Portfolio
+Date :8/24/2022
+Time :3:21 PM
+*/
+
+::-webkit-scrollbar{
+    width: 0.3em;
+    background-color: #8086F1;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #3C5B54;
+}
+
+
+section{
+    /*height: 100vh;*/
+}
+
+/*main-text-hello-=for All*/
+main>section>div>h1:first-child{
+    position: absolute;
+    font-size: 5em;
+    margin-top: calc(90vh/2.5);
+    margin-left: calc(99.7vw/2.3);
+}
+
+/*Header Text-All*/
+h2 {
+    position: absolute;
+    text-align: center;
+    left: 15px;
+    color: white;
+}
+
+
+/*=======Page 01==========*/
+
+/*page01-HeaderBar*/
+body > main > section:nth-child(1) > header:first-child {
+    width: 99.7vw;
+    background-color: red;
+    height: 10vh;
+    top: 0;
+    position: sticky;
+    z-index: 2;
+}
+
+/*page01-Body*/
+body>main>section:nth-child(1)>div:nth-child(2){
+    width: 99.7vw;
+    height: 90vh;
+    background-color: lightcyan;
+    position: relative;
+    top:0;
+
+}
+
+/*=======Page 02==========*/
+
+/*page02-HeaderBar*/
+body > main > section:nth-child(2) > header:first-child {
+    width: 99.7vw;
+    background-color: blueviolet;
+    height: 10vh;
+    top: 0;
+    position: sticky;
+    z-index: 2;
+}
+/*page02-Body*/
+body>main>section:nth-child(2)>div:nth-child(2){
+    width: 99.7vw;
+    height: 90vh;
+    background-color: lightseagreen;
+    position: relative;
+    top:0;
+}
+
+/*========Page 03=======*/
+
+/*page03-HeaderBar*/
+body > main > section:nth-child(3) > header:first-child {
+    width: 99.7vw;
+    background-color: darkgoldenrod;
+    height: 10vh;
+    top: 0;
+    position: sticky;
+    z-index: 2;
+}
+/*page03-Body*/
+body>main>section:nth-child(3)>div:nth-child(2){
+    width: 99.7vw;
+    height: 90vh;
+    background-color: lightgray;
+    position: relative;
+    top:0;
+}
+
+/*========Page 04=======*/
+
+/*page04-HeaderBar*/
+body > main > section:nth-child(4) > header:first-child {
+    width: 99.7vw;
+    background-color: darkolivegreen;
+    height: 10vh;
+    top: 0;
+    position: sticky;
+    z-index: 2;
+}
+
+/*page04-Body*/
+body>main>section:nth-child(4)>div:nth-child(2){
+    width: 99.7vw;
+    height: 90vh;
+    background-color: darkcyan;
+    position: relative;
+    top:0;
+}
